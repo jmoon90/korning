@@ -6,14 +6,15 @@
     <td><b>Sale Amount</b></td>
     <td><b>Invoice No</b></td>
     <td><b>Units Sold</b></td>
+    <td><b>PPU</b></td>
   </tr>
   <% @sale_within_last_6_months.each do |sale| %>
-  <% binding.pry %>
-  <tr>
-    <td><%= sale.sale_date %></td>
-    <td><%= sale.sale_amount %></td>
-    <td><%= sale.invoice_no %></td>
-    <td><%= sale.units_sold %></td>
-  </tr>
+    <tr>
+      <td><%= sale.sale_date %></td>
+      <td><%= sale.sale_amount %></td>
+      <td><%= sale.invoice_no %></td>
+      <td><%= sale.units_sold %></td>
+      <td><%= (sale.sale_amount / sale.units_sold).round(2) %></td>
+    </tr>
   <% end %>
 </table>
