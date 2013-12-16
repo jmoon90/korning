@@ -7,7 +7,8 @@
     <td><b>Invoice No</b></td>
     <td><b>Units Sold</b></td>
   </tr>
-  <% @sales.each do |sale| %>
+  <% @sale_within_last_6_months.each do |sale| %>
+  <% binding.pry %>
   <tr>
     <td><%= sale.sale_date %></td>
     <td><%= sale.sale_amount %></td>
