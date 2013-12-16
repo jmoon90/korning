@@ -1,0 +1,18 @@
+<h1>Sales</h1>
+
+<table>
+  <tr>
+    <td><b>Sale Date</b></td>
+    <td><b>Sale Amount</b></td>
+    <td><b>Invoice No</b></td>
+    <td><b>Units Sold</b></td>
+  </tr>
+  <% @sales.each do |sale| %>
+  <tr>
+    <td><%= sale.sale_date %></td>
+    <td><%= sale.sale_amount %></td>
+    <td><%= sale.invoice_no %></td>
+    <td><%= sale.units_sold %></td>
+  </tr>
+  <% end %>
+</table>

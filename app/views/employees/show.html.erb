@@ -21,16 +21,11 @@
 
     <% @sales.each do |sale| %>
       <tr>
-          <td> <%= sale.sale_amount %> </td>
-          <td> <%= sale.customer_and_account_no %> </td>
-          <td> <%= sale.product_name %> </td>
-          <td> <%= sale.sale_date %> </td>
+        <td> <%= sale.sale_amount %> </td>
+        <td> <%= sale.customer_and_account_no %> </td>
+        <td> <%= sale.product_name %> </td>
+        <td> <%= sale.sale_date %> </td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-
-
-
-

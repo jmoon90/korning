@@ -11,8 +11,7 @@
   <tbody>
     <% @employees.each do |employee| %>
       <tr>
-        <% binding.pry %>
-        <td><%= link_to "#{employee.first_name}", employee_path(@employee) %></td>
+        <td><%= employee.first_name %></td>
         <td><%= employee.last_name %></td>
         <td><%= employee.email %></td>
       </tr>
